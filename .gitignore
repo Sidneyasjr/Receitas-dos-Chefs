@@ -1,0 +1,8 @@
+.env
+.idea
+.receitas-chefs
+*.sqlite3
+*pyc
+__pycache__
+staticfiles
+

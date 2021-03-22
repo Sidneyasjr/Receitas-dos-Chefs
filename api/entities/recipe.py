@@ -1,10 +1,12 @@
 class Recipe:
-    def __init__(self, title, ingredients, steps, time, servings):
+    def __init__(self, title, ingredients, steps, time, servings, chef, user):
         self.__title = title
         self.__ingredients = ingredients
         self.__steps = steps
         self.__time = time
         self.__servings = servings
+        self.__chef = chef
+        self.__user = user
 
     @property
     def title(self):
@@ -45,3 +47,19 @@ class Recipe:
     @servings.setter
     def servings(self, servings):
         self.__servings = servings
+
+    @property
+    def chef(self):
+        return self.__chef
+
+    @chef.setter
+    def chef(self, chef):
+        self.__chef = chef
+
+    @property
+    def user(self):
+        return self.__user
+
+    @user.setter
+    def user(self, user):
+        self.__user = user

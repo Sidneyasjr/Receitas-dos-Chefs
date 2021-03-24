@@ -17,7 +17,7 @@ class RecipeList(generics.ListCreateAPIView):
     queryset = recipe_service.list_recipes()
     serializer_class = recipe_serializer.RecipesSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title', 'ingredients', 'steps']
+    search_fields = ['title', 'ingredients', 'steps', 'time', 'servings']
 
 
 class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
